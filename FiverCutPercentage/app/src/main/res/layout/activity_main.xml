@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgviewdetail"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/toolbar_bg"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"></TextView>
+
+    </LinearLayout>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:hint="অর্ডার পরিমাণ"
+    android:inputType="numberDecimal"
+    android:textColorHint="@color/white"
+    android:textColor="@color/white"
+    android:id="@+id/amount"
+    android:layout_height="wrap_content">
+
+</EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="আপনি কত টিপ দিবেন?"
+        android:textColor="@color/white"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/tip_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:checkedButton="@id/option_twenty_percent"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            android:id="@+id/option_twenty_percent"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="20% (ভাল)" />
+
+        <RadioButton
+            android:id="@+id/option_fifteen_percent"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="15% (মাঝামাঝি)" />
+
+        <RadioButton
+            android:id="@+id/option_five_percent"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="5% (নিম্ন)" />
+    </RadioGroup>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_margin="15dp"
+        android:background="@drawable/bgviewdetail"
+        android:layout_height="wrap_content"
+        android:text="হিসাব করা"
+    />
+
+    <TextView
+        android:id="@+id/tip_result"
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_amount"
+       />
+</LinearLayout>

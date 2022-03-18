@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">রেস্টুরেন্ট টিপ</string>
+    <string name="tip_amount">টিপ পরিমাণ: %s</string>
+</resources>
